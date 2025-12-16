@@ -25,7 +25,7 @@ function ProjectsSection() {
             <article key={project.title} className="project-card large">
               <div className="project-image-placeholder">
                 <img
-                  src="public/dashboard.png"
+                  src="/dashboard.png"
                   alt="Dashboard Analítico - Vista referencial"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
