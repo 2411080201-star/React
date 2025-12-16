@@ -23,7 +23,13 @@ function ProjectsSection() {
         <div className="projects-grid">
           {projects.map((project) => (
             <article key={project.title} className="project-card large">
-              <div className="project-image-placeholder" />
+              <div className="project-image-placeholder">
+                <img
+                  src="public/dashboard.png"
+                  alt="Dashboard Analítico - Vista referencial"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </div>
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
