@@ -20,8 +20,10 @@ function Home() {
             <a href="#contact">Contacto</a>
 
             {/* NUEVO: Link para ir al dashboard */}
-            <Link to="/dashboard">Dashboard</Link>
-          </nav>
+              <a href="http://localhost/VENTAS/login.php" target="_blank" rel="noopener noreferrer">
+      Dashboard
+    </a>
+  </nav>
 
           <button className="btn-primary">Get Started</button>
         </header>
