@@ -176,7 +176,10 @@
 .projects-grid {
   display: grid;
   gap: 1.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
+  justify-items: center;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -187,11 +190,28 @@
   box-shadow: 0 16px 30px rgba(148, 163, 184, 0.4);
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 880px;
 }
 
 .project-image-placeholder {
-  height: 160px;
+  height: 320px;
   background: radial-gradient(circle at top, #e9d5ff 0, #c4b5fd 40%, #a855f7 100%);
+}
+
+/* Larger variant for the single Dashboard card */
+.project-card.large .project-content {
+  padding: 2rem 2.2rem 2rem;
+}
+
+.project-card.large .project-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-card.large .project-content p {
+  font-size: 1.05rem;
+  color: #4b5563;
 }
 
 .project-content {
